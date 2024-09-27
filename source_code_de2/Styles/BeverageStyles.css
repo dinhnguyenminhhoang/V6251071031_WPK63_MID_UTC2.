@@ -1,0 +1,118 @@
+﻿.beverage-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.beverage-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 20px); 
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor:pointer;
+    padding:4px;
+}
+
+    .beverage-item:hover {
+        transform: scale(1.05);
+    }
+
+    .beverage-item img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .beverage-item h3 {
+        margin: 0 0 10px;
+        font-size: 1.5em;
+    }
+
+    .beverage-item p {
+        margin: 0 0 10px;
+        color: #666;
+    }
+
+    .beverage-item .beverage-price {
+        font-size: 1.2em;
+        color: #000;
+        font-weight: bold;
+    }
+
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.beverage-pager {
+    display: inline-block;
+}
+
+    .beverage-pager a {
+        text-decoration: none;
+        padding: 8px 12px;
+        margin: 0 5px;
+        border: 1px solid #007bff;
+        color: #007bff;
+        border-radius: 5px;
+    }
+        .beverage-pager a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+asp:TextBox {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+asp:Button {
+    background-color: #5cb85c; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+    asp:Button:hover {
+        background-color: #4cae4c;
+    }
+
+#BeverageGridView {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    #BeverageGridView th {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px;
+    }
+
+    #BeverageGridView td {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    #BeverageGridView tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    #BeverageGridView img {
+        width: 100px;
+        height: auto;
+    }
